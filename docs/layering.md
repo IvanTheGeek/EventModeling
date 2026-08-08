@@ -11,6 +11,10 @@ Drafted 2026-08-08 during the FnEmail walk-throughs. The hypothesis inverts the 
 of a model repository: the polished model is not the source that walks instantiate — **the walks
 are the source, and the model is derived from them.**
 
+The method's own vocabulary — the canon slice, the timeline, the four patterns, Given-When-Then —
+is summarized in [the primer](primer.md); this document assumes it. The slice and workflow defined
+below are this document's layered senses of those terms, built on the canon ones.
+
 ## The elements
 
 **A step is an instance of a slice, carrying example data.** One concrete traversal of one slice,

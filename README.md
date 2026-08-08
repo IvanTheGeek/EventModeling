@@ -15,6 +15,7 @@ their examples extend these documents.
 
 | Document | What it holds, and how firmly |
 |:--|:--|
+| [docs/primer.md](docs/primer.md) | the method authors' canon in brief — timeline, the three moving pieces, the four patterns, slices, Given-When-Then. **Verified quotations; the summary is the author's reading** |
 | [docs/layering.md](docs/layering.md) | step, slice, path, workflow, timeline — the layers and which concern lives at which. **Working hypothesis** |
 | [docs/path-and-step-form.md](docs/path-and-step-form.md) | the concrete form of a walked path: the preamble, the step table, `Given` degrees, what a view carries. **Current practice, resting on the layering hypotheses** |
 | [docs/state-view-todo-list-decision-model.md](docs/state-view-todo-list-decision-model.md) | one fold, three consumers — and why command-validation state has no box. **Verified quotations; the synthesis is the author's reading** |

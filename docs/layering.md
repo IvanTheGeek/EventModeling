@@ -56,11 +56,13 @@ recorded as the finding
 *The layering* block). Every claim in this document has its long-form reasoning in that
 repository's exploration records.
 
-## The completeness check runs at path level, in both directions
+## The completeness check runs at path level, in three checks
 
-Backward: every varying value an output renders traces to an origin on the page. Forward: every
-event has at least one consumer, and every unconsumed field is either deleted or flagged as an
-open question — never left silent. A value that is constant in every walk there will ever be is a
+Backward: every varying value an output renders traces to an origin on the page. Payload: every
+value an emitted event carries traces to a command field, a `Given` fold, a derivation from
+either, a mint at the step, or a named boundary fact. Forward: every event has at least one
+consumer, and every unconsumed field is either deleted or flagged as an open question — never
+left silent. A value that is constant in every walk there will ever be is a
 **rule, not a fact**, and carries no field. A name no protocol or domain document uses is
 **manufactured**, and survives only if the walk shows a real origin and a real destination for
 its value.

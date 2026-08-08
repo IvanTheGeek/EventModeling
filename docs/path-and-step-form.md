@@ -107,6 +107,24 @@ Existence-restating booleans that nothing renders are not fields; the choice amo
 (success code versus refusal code) is scenario selection, which is a slice-level concern
 contributed by whichever walk actually takes the other branch.
 
+## Completeness closes in three checks
+
+The backward check stops at rendered outputs; the forward check counts consumers. Neither asks
+where an **emitted** event's payload values come from, and under the first two alone a walk
+carried values materializing from nowhere — the gap was found twice in one day, by a document
+review and by a refactor that orphaned a field whose real consumer turned out to be an
+undeclared fold.
+
+| Check | Every… | …traces to |
+|:--|:--|:--|
+| backward | varying output value | the view field carrying it, and that field's event of origin |
+| payload | emitted event payload value | a command field, a `Given` fold, a derivation from either, a mint at the step, or a named boundary fact |
+| forward | event | at least one consumer |
+
+A payload value with none of those origins is a finding — usually a missing `Given`, sometimes a
+missing data collection point further back. Seeded events are declared rather than emitted; the
+Required first block already rules their provenance out of scope.
+
 ## Naming discipline
 
 Refer to slices by **name**, never by number — numbers renumber silently. Step numbers within one
@@ -118,7 +136,7 @@ fact, and its field is deleted with the reasoning recorded.
 ## What a path document contains besides steps
 
 Scene · the dialogue or story being walked · Required first · the walk · accounting ·
-completeness instantiated in **both directions** (every output value to its origin; every event
-to its consumers) · what this walk tested · what it did not test · hotspots, listing only what is
+completeness instantiated in **three checks** (every output value to its origin; every emitted
+payload to its origin; every event to its consumers) · what this walk tested · what it did not test · hotspots, listing only what is
 open or new. Resolved doubts are absent, not struck through; corrections are recorded ⚠️-style
 where they happened.

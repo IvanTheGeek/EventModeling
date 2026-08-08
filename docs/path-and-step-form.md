@@ -45,6 +45,12 @@ model** (infrastructure, a transport) has no top row either: the fields it lifts
 boundary are admitted because something inside consumes them, and nothing else about the outside
 is modeled.
 
+**The command row carries the fields the command takes from its actor.** A bare command name
+breaks the completeness check: every field needs an origin, and for everything the actor supplies
+the command *is* that origin. Where the command row and the Event row look nearly identical, that
+is the check **passing** — a value arriving and being stored unchanged. Where they diverge,
+something was derived, generated or dropped, and the divergence is visible at a glance.
+
 ## The Given
 
 **The `Given` is a labeled block, not a row.** The label stands alone with an empty right cell,
@@ -79,6 +85,13 @@ The data degree appears **exactly where a value is used** — folded into state 
 never as decoration. An unsatisfiable `Given` is a finding: it means the model is missing a data
 collection point somewhere in the past, and working backward from the need is how the hole gets
 located.
+
+**It is the minimal dependency, not the accumulated history — a deliberate departure.** Dymitruk's
+convention is that a given is every previous row, so a test runner *"can always just use an
+accumulator to add events"*. That convention exists for a runner, which has no walk to read. Here
+the walk is on the page, so restating it would be redundant: a step with three events above it
+declares the one it actually needs. Recorded rather than left implicit, because a reader who knows
+the method will notice the difference and should find it accounted for.
 
 ## A view is the dataset provided to the actor
 

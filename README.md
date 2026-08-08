@@ -55,12 +55,12 @@ updates here — extending the hypotheses where they hold, revising them where t
 **Code is AGPL-3.0, documents are CC BY-SA 4.0** — the family ruling, shared with FnEmail-Model,
 which registers it in its
 [`docs/DECISIONS.md`](https://github.com/IvanTheGeek/FnEmail-Model/blob/main/docs/DECISIONS.md)
-and whose ruling commit of the same title carries the fuller reasoning; the ruling commit here
-records what is applied in this repository:
+and whose ruling commit of the same title carries the fuller reasoning. This is a repository of
+documents — the modeling tool it works toward will live in repositories of its own — so:
 
-- **Code — above all the modeling tool this repository is working toward** — is licensed
-  [AGPL-3.0](LICENSE).
-- **The documents** (docs/, this README, the [agent rules](AGENTS.md)) are licensed
-  [CC BY-SA 4.0](LICENSE-docs).
+- **The documents — everything this repository currently holds** — are licensed
+  [CC BY-SA 4.0](LICENSE).
+- **Code, if this repository ever comes to hold any**, is licensed [AGPL-3.0](LICENSE-code) —
+  the license the modeling tool itself will take.
 - **Not relicensed:** brief quotations from the method corpus remain their authors' —
   [AGENTS.md](AGENTS.md) rules 2 and 7.

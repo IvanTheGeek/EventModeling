@@ -36,7 +36,8 @@ podcast, machine transcript.)
 | top row | the actor and what crossed to it — **absent** when nothing does |
 | *(blank label)* | the command or view itself — the slice, already named in the header |
 | Event | the event emitted (command steps only) |
-| Given | the minimal dependency — see degrees below |
+| Given | the label alone, standing as an in-table sub-header — see below |
+| *(blank label)* | the minimal dependency — see degrees below |
 
 Two absences are meaningful. A **consulted** view — read internally, rendered to nobody — has no
 top row; its readers declare it in their own `Given` rows. A step whose actor is **outside the
@@ -45,6 +46,24 @@ boundary are admitted because something inside consumes them, and nothing else a
 is modeled.
 
 ## The Given
+
+**The `Given` is a labeled block, not a row.** The label stands alone with an empty right cell,
+and the events follow in the row beneath it under an empty left label:
+
+| 🟦 C · Step 3 | `Helo` |
+|:--|:--|
+| MTA Client | ⬛ `HELO` bar.com |
+| | 🟦 **Helo**&#10;<br>&nbsp;&nbsp;`claimed_domain`: bar.com |
+| Event | 🟧 **ClientIdentified**&#10;<br>&nbsp;&nbsp;`claimed_domain`: bar.com |
+| Given | |
+| | 🟧 **ConnectionAccepted** |
+
+The label row reads as a sub-header and a separator, which is what the `Given` is: the rows above
+it are *observations* of what the walk did, and the block below it is the step's one *claim*. It
+is also the shape the **Required first** block already uses, so the path-level `Given` and the
+step-level one are visibly one device at two scales rather than two conventions that happen to
+share a word. However many events a `Given` cites, they still stack inside the single cell below
+the label, in the Event row's own layout — the block is two rows, never one row per event.
 
 Dependencies point backward, only, and are declared by the step that needs them — there is no
 *Consumed by*, at step or at path level, because a forward list is derived data written by hand

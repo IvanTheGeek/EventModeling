@@ -22,7 +22,7 @@ it can be adopted if the cost ever stops mattering.
 Every text-coloring mechanism tested fails or diverges across renderers. The working legend:
 
 🟧 Event · 🟦 Command · 🟩 Read Model · ⬜ rendered UI · ⬛ wire · 🟨 external / required-first ·
-🟥 hotspot · 🟤 nothing (and only ever in a `Given` row)
+🟥 hotspot · 🟤 nothing (and only ever in a `Given`)
 
 ## No Mermaid; diagrams are markdown tables
 

@@ -48,4 +48,18 @@ to record, never a silent drift.
 
 Seeded 2026-08-08 from the FnEmail walk-throughs. The walks continue; what they teach feeds
 updates here — extending the hypotheses where they hold, revising them where they break.
-Licensed AGPL-3.0 — see [LICENSE](LICENSE).
+
+## License
+
+**Code is AGPL-3.0, documents are CC BY-SA 4.0** — the family ruling, shared with FnEmail-Model,
+which registers it in its
+[`docs/DECISIONS.md`](https://github.com/IvanTheGeek/FnEmail-Model/blob/main/docs/DECISIONS.md)
+and whose ruling commit of the same title carries the fuller reasoning; the ruling commit here
+records what is applied in this repository:
+
+- **Code — above all the modeling tool this repository is working toward** — is licensed
+  [AGPL-3.0](LICENSE).
+- **The documents** (docs/, this README, the [agent rules](AGENTS.md)) are licensed
+  [CC BY-SA 4.0](LICENSE-docs).
+- **Not relicensed:** brief quotations from the method corpus remain their authors' —
+  [AGENTS.md](AGENTS.md) rules 2 and 7.

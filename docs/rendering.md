@@ -44,11 +44,14 @@ there, so monospace text is never bolded; italic on a code span does work.
 
 ## Tables: structure is what markdown punishes
 
-Every table needs its header row and `|:--|` separators; a table continues until the first
-non-table line, so **every table header must be preceded by a blank line** — removing a row
-between tables can fuse them, rendering the next header as data and its separator as literal
-`:--` cells. No raw HTML tables: one Claude renderer strips the tags and fuses the contents, the
-other prints the tags as text. Cells already top-align in both Claude renderers — do not pad, and
+Every table needs its header row and `|:--|` separators, and **a table ends at a blank line — not
+at the first line that stops looking like a table.** A following line without pipes does not end
+it: GFM takes it as a lazy continuation and makes it a row, one cell wide, shattering any emphasis
+that spanned the break into literal asterisks. A blank line is therefore required on **both** sides
+of every table — without one before, removing a row between two tables fuses them and renders the
+next header as data and its separator as literal `:--` cells; without one after, the paragraph that
+follows is swallowed into the table. No raw HTML tables: one Claude renderer strips the tags and
+fuses the contents, the other prints the tags as text. Cells already top-align in both Claude renderers — do not pad, and
 do not solve alignment problems that were never observed (that one was tested only after a fix
 for it had produced two false verdicts).
 

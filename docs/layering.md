@@ -15,10 +15,9 @@ are the source, and the model is derived from them.**
 
 **A step is an instance of a slice, carrying example data.** One concrete traversal of one slice,
 with the actual bytes and the actual field values of one occasion. The example a document displays
-is one *selected* for display — where the method's authors typically show a single set of example
-data on a model, the position here is that the true slice composes **many**: every walk that
-traverses a slice contributes its scenarios, and a walk that revisits a slice extends the composed
-slice's Given-When-Then set rather than repeating it.
+is one *selected* for display — the true slice composes **many**: every walk that traverses a
+slice contributes its scenarios, and a walk that revisits a slice extends the composed slice's
+Given-When-Then set rather than repeating it.
 
 **A slice is the composition of every step that traversed it**, across every walked path, for
 which real data exists. A slice's specification set is therefore a *result*, not an input — it

@@ -135,8 +135,10 @@ git and its `docs/DECISIONS.md`, and `--follow` here stops at the seed commit.
 cleanup, mass formatting, or unrelated work — a tangled diff makes both the change and the
 reasoning unretrievable. The message opens by naming the ruling with a short title used
 **verbatim** wherever the ruling is cited, so `git log -F --grep='<title>'` retrieves it (`-F`
-matches the title as text — bare `--grep` is regex, and a title's punctuation would break it) —
-this repository family identifies rulings by descriptive title, never by serial number
+matches the title as text — bare `--grep` is regex, and a title's punctuation would break it).
+A cited title never wraps across lines: `--grep` matches within a line, and a wrapped citation
+is unfindable — found the hard way on this form's first use. This repository family
+identifies rulings by descriptive title, never by serial number
 (FnEmail-Model's `docs/DECISIONS.md` register set the precedent). Beyond rule 6's baseline,
 cover whichever of these actually carry information: the context that forced the decision; the
 rationale; the alternatives materially considered and why each was rejected; the costs accepted;

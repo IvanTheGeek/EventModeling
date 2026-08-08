@@ -65,11 +65,13 @@ and the events follow in the row beneath it under an empty left label:
 | | 🟧 **ConnectionAccepted** |
 
 The label row reads as a sub-header and a separator, which is what the `Given` is: the rows above
-it are *observations* of what the walk did, and the block below it is the step's one *claim*. It
-is also the shape the **Required first** block already uses, so the path-level `Given` and the
-step-level one are visibly one device at two scales rather than two conventions that happen to
-share a word. However many events a `Given` cites, they still stack inside the single cell below
-the label, in the Event row's own layout — the block is two rows, never one row per event.
+it are *observations* of what the walk did, and the block below it is the step's one *claim*. The
+**Required first** block reads the same way — a label row standing as a sub-header, events
+beneath it under an empty left label — so the path-level `Given` and the step-level one are one
+device at two scales. Their layouts differ: the path block gives each declared event its own row,
+where the step block stacks its events in the single cell below the label. However many events a
+`Given` cites, they still stack inside the single cell below the label, in the Event row's own
+layout — the block is two rows, never one row per event.
 
 Dependencies point backward, only, and are declared by the step that needs them — there is no
 *Consumed by*, at step or at path level, because a forward list is derived data written by hand

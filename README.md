@@ -17,11 +17,11 @@ their examples extend these documents.
 |:--|:--|
 | [docs/primer.md](docs/primer.md) | the method authors' canon in brief — timeline, the three moving pieces, the four patterns, slices, Given-When-Then. **Verified quotations; the summary is the author's reading** |
 | [docs/layering.md](docs/layering.md) | step, slice, path, workflow, timeline — the layers and which concern lives at which. **Working hypothesis** |
-| [docs/path-and-step-form.md](docs/path-and-step-form.md) | the concrete form of a walked path: the preamble, the step table, `Given` degrees, what a view carries. **Current practice, resting on the layering hypotheses** |
+| [docs/path-and-step-form.md](docs/path-and-step-form.md) | the concrete form of a walked path: the Required-first preamble, the one-table step, the labeled `Given` block and its degrees, what a view carries, and the three completeness checks — the generic form, which FnEmail's STEP-FORM.md now only supplements with the SMTP layer. **Current practice, resting on the layering hypotheses** |
 | [docs/state-view-todo-list-decision-model.md](docs/state-view-todo-list-decision-model.md) | one fold, three consumers — and why command-validation state has no box. **Verified quotations; the synthesis is the author's reading** |
 | [docs/rendering.md](docs/rendering.md) | what a model document may emit and still render everywhere. **Measured**, not assumed |
 | [docs/altitude.md](docs/altitude.md) | role collapse, when a model splits in two, and one wire instant appearing correctly in two models. **Working hypothesis**; the quotations are verified |
-| [docs/extensions.md](docs/extensions.md) | proposed extensions to the method — **parked, deliberately applied to no model**, so the orthodox form stays measurable against them |
+| [docs/extensions.md](docs/extensions.md) | proposed extensions to the method — **parked, deliberately applied to no model**, so the orthodox form stays measurable against them; the steps-and-paths section has partly graduated into the layering, its dated note records what remains parked |
 
 ## How firmly things are held
 

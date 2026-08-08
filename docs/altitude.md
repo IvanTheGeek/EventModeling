@@ -203,25 +203,30 @@ simplification. It is the accurate account of what their business knows.**
 
 ### FnEmail's model
 
-Twelve slices, nine events, `Received:` reconstructable from the stream, transcript reconstructable
-from the stream. The same instant appears as `MessageAccepted`.
+Twelve slices, eleven events, `Received:` reconstructable from the stream, transcript
+reconstructable from the stream. The shared instant is the issuance of the `250` that closes
+`DATA` — the moment RFC 5321 marks as *"a formal handoff of responsibility for the message"*
+(its §2.1, elaborated in its §6.1). `MessageAccepted` is FnEmail's record of the decision that
+`250` transmits; it precedes the wire instant it is rendered into.
 
 ### Why both are correct
 
-**They are not two altitudes of one model. They are two models that share exactly one event.**
+**They are not two altitudes of one model. They are two models that share exactly one boundary
+instant, each side recording its own event of it.**
 
-The e-commerce model's `OrderConfirmationSent` and FnEmail's `MessageAccepted` are the two sides of
-one boundary — the internal/external pair Dilger describes, where full detail lives inside and a
-stable summary crosses. This is *"the normal, correct arrangement"* in Ch. 5, not a compromise.
-Asking which is the real model of email is asking for the global model of an order: *"futile and
-silly."*
+The e-commerce model's `OrderConfirmationSent` and FnEmail's `MessageAccepted` are the two sides
+of one boundary — the sender's record of receiving the `250`, the receiver's record of the
+decision it transmits — the internal/external pair Dilger describes, where full detail lives
+inside and a stable summary crosses. This is *"the normal, correct arrangement"* in Ch. 5, not a
+compromise. Asking which is the real model of email is asking for the global model of an order:
+*"futile and silly."*
 
 Two consequences worth keeping:
 
-1. **The count of shared events measures the boundary's quality.** One is healthy. If the
-   e-commerce model ever needed to branch on a `421`, the boundary would be wrong — either they
-   have absorbed the mail system's domain knowledge (G5 violated) or it has failed to give them a
-   fact they legitimately need (in which case add it to `MessageAccepted`'s payload as a
+1. **The count of shared boundary instants measures the boundary's quality.** One is healthy. If
+   the e-commerce model ever needed to branch on a `421`, the boundary would be wrong — either
+   they have absorbed the mail system's domain knowledge (G5 violated) or it has failed to give
+   them a fact they legitimately need (in which case add it to `MessageAccepted`'s payload as a
    *decision*, per §2.4 — never as a code).
 2. **The collapse is not lossy from their side.** Nothing was thrown away that they could have
    used. Everything below `MessageAccepted` fails G1 *in their model*. Detail belongs where the

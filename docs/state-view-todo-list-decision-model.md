@@ -37,9 +37,11 @@ reject an event"*, and its scenarios are Given/Then. What it carries is decided 
 task needs, nothing more.
 
 **FnEmail example:** `ServiceReady{server_domain, greeting_text}` — the dataset from which the
-`220` greeting is rendered to the MTA Client. The walk's working rule that *the renderer owns the
-constants and the view owns the facts* is this fate's discipline: see the
-[WORKING walk](https://github.com/IvanTheGeek/FnEmail-Model/blob/main/docs/paths/WORKING-helo-direct-single-recipient-v2.md), *The form, in one paragraph*.
+`220` greeting is rendered to the MTA Client. The rule that *the renderer owns the constants and
+the view owns the facts* is this fate's discipline — stated in
+[path-and-step-form.md](path-and-step-form.md), *A view is the dataset provided to the actor*;
+the [FnEmail walk](https://github.com/IvanTheGeek/FnEmail-Model/blob/main/docs/paths/WORKING-helo-direct-single-recipient-v2.md)
+is the worked instance.
 
 ## Fate 2 — a processor reads it: the todo list
 
@@ -95,12 +97,16 @@ Where does precondition state live instead?
   as a parameter*. The handler still never reads a view.
 
 **FnEmail example:** `TransactionState`. The model defined it as a view answering *Open? Reverse
-path? How many recipients?* for `RcptTo`, `BeginData` and `SubmitContent` — command validation
-wearing a view's name. The walk exposed the truth by accident of discipline: under the
-minimal-dependency rule, **no step ever consults it** — every command's `Given` cites events
-directly, which is exactly where the corpus says decision state belongs. What remains of
-`TransactionState` on the page is only its rendered role — drawing `250` OK — whose dataset is
-empty, a question parked with the walk's step 6.
+path? How many recipients?* — consumed, per the model's own Pre lines, only by `BeginData` —
+command validation wearing a view's name. The walk exposed the truth by accident of discipline:
+under the minimal-dependency rule, **no step ever consults it** — every command's `Given` cites
+events directly, which is exactly where the corpus says decision state belongs. What remains of
+`TransactionState` on the page is only its rendered role — drawing `250` OK — whose dataset the
+walked path has since emptied — the `250` renders from existence (FnEmail-Model cd06274, the
+walk's first `TransactionState` traversal) — with the view's own future name, and what a
+rejection walk seats at the slice layer, still open. *(Dated note, 2026-08-08: this clause
+originally read "whose dataset is empty, a question parked with the walk's step 6"; the walk's
+first `TransactionState` traversal note quotes that phrase and marks it discharged.)*
 
 ---
 
@@ -116,9 +122,9 @@ Two boundary clarifications the corpus makes, both of which bit this project:
 
 **Progress is not work.** Even for one long-running process, Dymitruk splits the fates: the work
 is *"encapsulated in to-do lists"*, while where-the-process-stands *"is simply a read model for
-progress"* (workshop, machine transcript). An accumulating count — `recipient_count` — is
-progress-state; Dilger files calculated aggregations under the *Logic Read Model* pattern, never
-the todo list.
+progress"* (workshop, machine transcript). An accumulating count — the model's
+`recipient_count`, since deleted when the walked path emptied the view — was progress-state;
+Dilger files calculated aggregations under the *Logic Read Model* pattern, never the todo list.
 
 **The reservation pattern does not override the consumer test.** Dymitruk assigns a
 pending-reservations view to the todo-list side — *"it'll act as a to-do list which will be done

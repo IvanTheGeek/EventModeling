@@ -62,5 +62,7 @@ documents — the modeling tool it works toward will live in repositories of its
   [CC BY-SA 4.0](LICENSE).
 - **Code, if this repository ever comes to hold any**, is licensed [AGPL-3.0](LICENSE-code) —
   the license the modeling tool itself will take.
-- **Not relicensed:** brief quotations from the method corpus remain their authors' —
-  [AGENTS.md](AGENTS.md) rules 2 and 7.
+- **Not relicensed:** third-party material included here retains its original license and is not
+  covered by either grant; brief quotations from the method corpus remain their authors' —
+  [AGENTS.md](AGENTS.md) rules 2 and 7. Beyond brief quotation, third-party material enters only
+  when its own terms permit redistribution, always attributed, its terms named where it sits.

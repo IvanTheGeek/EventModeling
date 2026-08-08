@@ -72,12 +72,17 @@ the commit** — the point is disclosure, not any fixed name:
 Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>
 ```
 
-## 7. Nothing third-party enters this repository
+## 7. Third-party material enters only on terms that allow it
 
-The method research corpus (two commercial books, a mostly unlicensed mirrored corpus, machine
-transcripts of copyrighted speech) lives in a **separate private repository**. This repository
-cites, quotes briefly with attribution, and links. It never reproduces. This is what keeps it
-releasable under its own license, and it is not negotiable.
+Three constraints, not a blanket ban: never republish material that copyright or licensing does
+not permit; never use material without attribution; and for code, dependencies must be
+license-compatible with AGPL-3.0. The method research corpus (two commercial books, a mostly
+unlicensed mirrored corpus, machine transcripts of copyrighted speech) lives in a **separate
+private repository** because almost none of it may be republished — for corpus material the
+practice is unchanged and not negotiable: cite, quote briefly with attribution, link, never
+reproduce. That is what keeps this repository releasable. Third-party material whose own terms
+allow redistribution may enter; it keeps its original license, always attributed, its terms
+named where it sits, carved out of the repository's own grant (README → *License*).
 
 ## 8. Walk with real data
 

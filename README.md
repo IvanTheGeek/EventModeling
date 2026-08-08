@@ -19,6 +19,8 @@ their examples extend these documents.
 | [docs/path-and-step-form.md](docs/path-and-step-form.md) | the concrete form of a walked path: the preamble, the step table, `Given` degrees, what a view carries. **Current practice, resting on the layering hypotheses** |
 | [docs/state-view-todo-list-decision-model.md](docs/state-view-todo-list-decision-model.md) | one fold, three consumers — and why command-validation state has no box. **Verified quotations; the synthesis is the author's reading** |
 | [docs/rendering.md](docs/rendering.md) | what a model document may emit and still render everywhere. **Measured**, not assumed |
+| [docs/altitude.md](docs/altitude.md) | role collapse, when a model splits in two, and one wire instant appearing correctly in two models. **Working hypothesis**; the quotations are verified |
+| [docs/extensions.md](docs/extensions.md) | proposed extensions to the method — **parked, deliberately applied to no model**, so the orthodox form stays measurable against them |
 
 ## How firmly things are held
 

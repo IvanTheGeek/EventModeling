@@ -1,8 +1,15 @@
 # The layering — step, slice, path, workflow, and where each concern lives
 
-Ruled 2026-08-08 during the FnEmail walk-throughs, and it inverts the obvious reading of a model
-repository: the polished model is not the source that walks instantiate — **the walks are the
-source, and the model is derived from them.**
+> ⚠️ **Status: working hypothesis, not settled.** This document originally opened by calling the
+> layering "Ruled 2026-08-08". That overstated it: the relations below — what a step, a slice, a
+> path, and a workflow are, and how they contain one another — are the author's current thinking,
+> drafted during the FnEmail walk-throughs and still being tested by walks. They are not the
+> method authors' canon, and they are not final even here; further walks are expected to revise
+> them, and revisions are recorded, not silently applied. The drafting date stands.
+
+Drafted 2026-08-08 during the FnEmail walk-throughs. The hypothesis inverts the obvious reading
+of a model repository: the polished model is not the source that walks instantiate — **the walks
+are the source, and the model is derived from them.**
 
 ## The elements
 
@@ -57,7 +64,9 @@ its value.
 
 ## Departures registered
 
-Two positions above depart from or go beyond the method's authors, deliberately:
+Two positions above depart from or go beyond the method's authors, deliberately. Like the rest of
+this document they are working positions — held because walking demanded them, revisable the
+moment a walk breaks them:
 
 1. **Many examples compose the slice** — the authors' models typically display one example
    data set; here the displayed set is a selection and the union is the truth.

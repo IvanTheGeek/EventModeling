@@ -1,13 +1,18 @@
 # One fold, three consumers — state view, todo list, decision model
 
-Events accumulate; something reads the accumulated state. Which pattern is that? The corpus turns
-out to answer with a three-way split, and the split is decided by exactly one thing: **who
-consumes the fold**. Not the shape of the data, not whether the actor is human, not how many
-event types feed it. The consumer.
+Events accumulate; something reads the accumulated state. Which pattern is that? On this
+project's reading the corpus sorts into a three-way split, and the split is decided by exactly
+one thing: **who consumes the fold**. Not the shape of the data, not whether the actor is human,
+not how many event types feed it. The consumer.
 
 Researched 2026-08-08 against the method corpus (both authors, spoken and written — see *Sources*
 at the end), prompted by the walk-through question of whether FnEmail's `TransactionState` is a
-todo list. FnEmail appears here as the worked example; the finding is about the method.
+todo list. FnEmail appears here as the worked example; the reading is of the method's corpus.
+
+One caution on weight. The quotations below are verified verbatim against primary sources; the
+**three-fates synthesis that organizes them is the author's reading** of the corpus — a working
+frame the method's authors never state in this form, adopted because it decided FnEmail's
+question cleanly. Treat the quotes as evidence and the frame as a hypothesis.
 
 ---
 
@@ -32,7 +37,7 @@ reject an event"*, and its scenarios are Given/Then. What it carries is decided 
 task needs, nothing more.
 
 **FnEmail example:** `ServiceReady{server_domain, greeting_text}` — the dataset from which the
-`220` greeting is rendered to the MTA Client. The walk's ruling that *the renderer owns the
+`220` greeting is rendered to the MTA Client. The walk's working rule that *the renderer owns the
 constants and the view owns the facts* is this fate's discipline: see the
 [WORKING walk](https://github.com/IvanTheGeek/FnEmail-Model/blob/main/docs/paths/WORKING-helo-direct-single-recipient-v2.md), *The form, in one paragraph*.
 
@@ -133,7 +138,8 @@ send buffer as todo list; *"your preconditions are really … all the events to 
 protocol server is off the method's map, and this three-fates reading is the map fragment FnEmail
 drew to cover it: replies are state views rendered to the peer, autonomous work behind the
 responsibility boundary is a todo list, and conversation position is decision-model state that
-belongs in `Given` rows, not in boxes.
+belongs in `Given` rows, not in boxes. The fragment is drawn by this project and stands only
+until a walk or a primary source redraws it.
 
 ---
 

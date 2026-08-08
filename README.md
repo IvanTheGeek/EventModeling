@@ -13,12 +13,25 @@ their examples extend these documents.
 
 ## Reading order
 
-| Document | What it settles |
+| Document | What it holds, and how firmly |
 |:--|:--|
-| [docs/layering.md](docs/layering.md) | step, slice, path, workflow, timeline — the layers and which concern lives at which |
-| [docs/path-and-step-form.md](docs/path-and-step-form.md) | the concrete form of a walked path: the preamble, the step table, `Given` degrees, what a view carries |
-| [docs/state-view-todo-list-decision-model.md](docs/state-view-todo-list-decision-model.md) | one fold, three consumers — and why command-validation state has no box |
-| [docs/rendering.md](docs/rendering.md) | what a model document may emit and still render everywhere — measured, not assumed |
+| [docs/layering.md](docs/layering.md) | step, slice, path, workflow, timeline — the layers and which concern lives at which. **Working hypothesis** |
+| [docs/path-and-step-form.md](docs/path-and-step-form.md) | the concrete form of a walked path: the preamble, the step table, `Given` degrees, what a view carries. **Current practice, resting on the layering hypotheses** |
+| [docs/state-view-todo-list-decision-model.md](docs/state-view-todo-list-decision-model.md) | one fold, three consumers — and why command-validation state has no box. **Verified quotations; the synthesis is the author's reading** |
+| [docs/rendering.md](docs/rendering.md) | what a model document may emit and still render everywhere. **Measured**, not assumed |
+
+## How firmly things are held
+
+Three kinds of claim live in these documents, and they carry different weight:
+
+- **Measured** — the rendering rules were run against real renderers, with controls, and hold
+  until a renderer changes.
+- **Verified quotation** — every corpus quote was checked verbatim against a primary source at
+  citation time.
+- **Working hypothesis** — everything else, above all the layering: how steps, slices, paths,
+  workflows, and timelines relate. These are the author's current thinking, developed by walking
+  real systems and still being tested by the walks. Hypothesis documents say so at the top;
+  nothing in them is settled, here or in the method authors' canon.
 
 ## Provenance and sourcing
 
@@ -31,5 +44,6 @@ to record, never a silent drift.
 
 ## Status
 
-Seeded 2026-08-08 from the FnEmail walk-throughs. The walks continue; rulings made there feed
-updates here. Licensed AGPL-3.0 — see [LICENSE](LICENSE).
+Seeded 2026-08-08 from the FnEmail walk-throughs. The walks continue; what they teach feeds
+updates here — extending the hypotheses where they hold, revising them where they break.
+Licensed AGPL-3.0 — see [LICENSE](LICENSE).

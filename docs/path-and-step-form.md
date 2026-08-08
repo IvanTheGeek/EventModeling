@@ -1,8 +1,10 @@
 # The path and step form
 
-The concrete shape of a walked path document, as settled across the FnEmail explorations. Each
-rule here was tried, broken, or corrected at least once before it stabilized; the reasoning
-records live in the
+The concrete shape of a walked path document, as it currently stands after the FnEmail
+explorations. Each rule here was tried, broken, or corrected at least once before it held — but
+that is evidence, not settlement: the form rests on the layering hypotheses
+([layering.md](layering.md)), which are the author's working position, and if the layering moves,
+the form moves with it. The reasoning records live in the
 [FnEmail-Model paths directory](https://github.com/IvanTheGeek/FnEmail-Model/tree/main/docs/paths),
 and the current worked instance is the
 [direct-path walk](https://github.com/IvanTheGeek/FnEmail-Model/blob/main/docs/paths/WORKING-helo-direct-single-recipient-v2.md).

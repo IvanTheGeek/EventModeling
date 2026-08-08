@@ -15,10 +15,10 @@ as a gate whose output is read before committing, not alongside it:
 
 ```bash
 # files
-grep -rniE '\b(colour|behaviour|honour|centre|modelling|labell|maths|whilst)\w*|\b(organis|sanitis|recognis|generalis|prioritis|summaris|apologis)(e|es|ed|ing|ation|er)\b|\b(analyse|analysed|analysing)\b' --include='*.md' .
+grep -rniE '\b(colour|behaviour|honour|centre|modelling|labell|maths|whilst|artefact)\w*|\b(organis|sanitis|recognis|generalis|prioritis|summaris|apologis|authoris|standardis)(e|es|ed|ing|ation|er)\b|\b(analyse|analysed|analysing)\b' --include='*.md' .
 
 # the commit message, before it is used
-git log -n 20 --format='%B' | grep -niE '\b(colour|behaviour|honour|centre|modelling|labell|maths|whilst)\w*|\b(organis|sanitis|recognis|generalis|prioritis|summaris|apologis)(e|es|ed|ing|ation|er)\b|\b(analyse|analysed|analysing)\b'
+git log -n 20 --format='%B' | grep -niE '\b(colour|behaviour|honour|centre|modelling|labell|maths|whilst|artefact)\w*|\b(organis|sanitis|recognis|generalis|prioritis|summaris|apologis|authoris|standardis)(e|es|ed|ing|ation|er)\b|\b(analyse|analysed|analysing)\b'
 ```
 
 The pattern is tested by running it against known positives and known negatives, never by reading

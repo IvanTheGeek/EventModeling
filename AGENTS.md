@@ -3,9 +3,9 @@
 These rules produce bad work when broken. Rules 1–9 are inherited from the FnEmail project, where
 each was learned the hard way; the reasoning behind several lives in that repo's
 [AGENTS.md](https://github.com/IvanTheGeek/FnEmail-Model/blob/main/AGENTS.md) and is not repeated
-here. Rules 10–11 are this repository's own — a labeled departure, rule 9's discipline applied
-to ourselves: FnEmail records superseded rulings in-document; here, in normative documents, they
-live in git history.
+here. Rules 10–11 originated here — first as a labeled departure, since adopted by FnEmail-Model
+as its rules 14–15 — so the convention now governs the family: normative documents carry the
+present, git history carries the why, and exploration material keeps its in-document trail.
 
 ## 1. US spelling. Always.
 

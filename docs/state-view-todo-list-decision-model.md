@@ -103,8 +103,10 @@ under the minimal-dependency rule, **no step ever consults it** — every comman
 events directly, which is exactly where the corpus says decision state belongs. What remains of
 `TransactionState` on the page is only its rendered role — drawing `250` OK — whose dataset the
 walked path has since emptied — the `250` renders from existence (FnEmail-Model cd06274, the
-walk's first `TransactionState` traversal) — with the view's own future name, and what a
-rejection walk seats at the slice layer, still open. *(Dated note, 2026-08-08: this clause
+walk's first `TransactionState` traversal) — and which FnEmail-Model then split and half-named
+(`ReversePathAllowed` at the `MailFrom` step, 2026-08-09: a view names the response to its
+occasioning event); the second half's name, and what a rejection walk seats at the slice layer,
+stay open. *(Dated note, 2026-08-08: this clause
 originally read "whose dataset is empty, a question parked with the walk's step 6"; the walk's
 first `TransactionState` traversal note quotes that phrase and marks it discharged.)*
 

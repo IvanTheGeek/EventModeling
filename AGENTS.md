@@ -91,11 +91,64 @@ value with a real instance is how orphan fields, manufactured names, and vacuous
 found — several of this method's rules exist because a real value died on the page and the death
 was the finding.
 
-## 9. Departures are labeled
+## 9. Positions name their corpus and their stance
 
 Where this repository extends or contradicts the method's authors, the document says so and says
 why. A departure is a recorded decision; an unlabeled one is an error waiting to be cited as
 canon.
+
+**That warning cuts both ways, and the rule used to guard only one of them.** An adopted position
+with no citation reads as ours; an invented one sitting among cited material reads as theirs. So a
+position answers two questions, in this order.
+
+**What does the corpus do with it?** A fact about the sources, cited, read at citation time
+(rule 3). One of: the authors **prescribe** it; the authors are **divided** — say who, and how; the
+corpus is **silent** — and if silent, whether it is silent *in words* while enacting the thing in
+practice, because those are very different and the second is the common case here.
+
+**What do we do about it?** One word:
+
+| Stance | Means | What it costs beyond the citation |
+|:--|:--|:--|
+| **adopt** | we do what they do | the word |
+| **adapt** | their idea, our form — narrowed, strengthened, renamed | what changed, and what forced it |
+| **decline** | they prescribe it; we do not do it | the burden below |
+| **invent** | the corpus does not supply it | where you looked, and what forced it |
+
+*Divided* is a fact about the corpus, not a stance of ours — put it on the corpus line and the
+stance stays one word. Division **locates** a decline without excusing it: adopting one author's
+device is declining the other's refusal of it.
+
+**The decline burden: name the job, point at the fact.** The **job** is what the prescription is
+*for*, not what it says — a decline that cannot state the job has not understood the prescription
+and is casual by definition. The **fact** is the thing in our work that does that job differently
+or makes it unnecessary. If the job is simply forgone, say so and name what is lost: an admitted
+cost is a decline, an unnoticed one is an error. The bar is here because these authors practice
+what they prescribe; the reason for a practice is often not the reason it gives.
+
+The minimal-`Given` departure in [docs/path-and-step-form.md](docs/path-and-step-form.md)
+discharges it in two sentences and is the model to copy: Dymitruk's convention is every previous
+row so a runner *"can always just use an accumulator to add events"* — that is the job — and
+*"That convention exists for a runner, which has no walk to read. Here the walk is on the page."*
+— that is the fact.
+
+**If you cannot discharge the burden, you do not have a decline — you have an open question.** Say
+so. Recording it as a settled decline is the failure this rule exists to prevent. And an **invent**
+that does not say where it looked is an unverifiable absence claim: a corpus-wide negative
+published here was later found false because the extraction pipeline had silently dropped 324
+images.
+
+**When it applies.** To a position this repository registers or that is cited elsewhere as method —
+not to every sentence. A rule that taxed every claim would be abandoned, and an abandoned rule
+labels nothing.
+
+⚠️ **The heading changed and one entry in this repository is now mis-shaped.**
+[docs/layering.md](docs/layering.md)'s *Departures registered* section has to say "depart from **or
+go beyond**", because its two entries are different animals — *Many examples compose the slice*
+narrows what the authors do, while *Keys are not path concerns* fills a hole where the corpus says
+nothing. Those are **adapt** and **invent**, and the section was widening one word to hold both.
+What would settle it: splitting the section by stance when that document is next materially
+changed.
 
 ## 10. Documents carry the present. Git history carries the why
 
@@ -150,6 +203,25 @@ rationale; the alternatives materially considered and why each was rejected; the
 an `Applies-To:` trailer listing affected paths when the ruling governs more than the commit
 touches; a `Supersedes:` trailer naming the replaced ruling's title (and commit, when known).
 Typos, formatting, and mechanical changes need none of this — rule 6 alone covers them.
+
+**A standing change is a third motion, and it needs a commit of its own.** *Supersede* replaces a
+ruling; *correct* says it was wrong. Demoting, promoting or retiring a position says neither — the
+position stands unchanged and is held more or less firmly than before. It is a decision about a
+decision, and it vanishes if it rides inside a commit about something else. So: the subject line
+carries the affected ruling's title **verbatim** so `-F --grep` on the bare title still finds it
+(the matcher looks anywhere in the message, so a suffix is safe), and a `Standing:` trailer names
+the ruling and its new grade.
+
+A standing change is **not** a correction and takes no ⚠️: calling it one asserts the position was
+an error, when it was accepted and is now held provisionally.
+
+⚠️ **The family learned this by losing it, and three cited handles are still dead.** *Paths are the
+source; slices are derived* was demoted inside `fe0891e`, titled *Reframe the workflow relations as
+working hypotheses, not settled rulings*. Verified 2026-08-09, `git log --all -F --grep` returns
+nothing in either public repo for that title, for *The repository architecture — ruled 2026-08-08*,
+or — in this repository, its canonical home — for *One fold, three consumers*. All three are
+cross-repo or standing-change commits, which is exactly where the mechanism had no title
+discipline. What would settle it: a repair commit per handle, carrying the title verbatim.
 
 **Supersede; never rewrite.** A changed ruling is a new commit that names what it replaces. The
 old commit is the archive: never amended, rebased away, or reworded to make history look

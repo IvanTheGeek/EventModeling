@@ -67,8 +67,8 @@ workshop expert in three ways:
 | **What they see** | the model | the software |
 
 The third is the sharp one. A user can report that `550` fired when it should not have. A user
-cannot report that `DataPhaseEntered` is an event that should not exist, because they will never
-see the model.
+cannot report that `DataRequested` (the event once named `DataPhaseEntered`; H1, closed
+2026-08-09) is an event that should not exist, because they will never see the model.
 
 **Two things convert product feedback into model-level signal, and both are already planned:**
 

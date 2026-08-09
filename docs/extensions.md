@@ -247,7 +247,10 @@ protocol facts, not domain facts, and forcing them onto one timeline is what mak
 awkward. Two models dissolves both questions. *(Dated note, 2026-08-08: FnEmail-Model's
 `model-altitude.md` §3 has since classified `DataPhaseEntered` as product-tier, not protocol —
 the awkwardness this section responds to is now framed as a contested G1 destination rather than
-protocol-vs-domain. The `503` half of the motivation stands.)*
+protocol-vs-domain. The `503` half of the motivation stands. Second dated note, 2026-08-09: H1
+closed — the event is `DataRequested` now, renamed as a capture of the client's request under
+[`event-kinds.md`](event-kinds.md); this section keeps the old name as the record of what
+triggered it.)*
 
 Related: Dilger appears to advocate multiple domain models directly, stacking a short HELO line
 above or below a fuller EHLO model — which is the same move applied to protocol variants rather

@@ -105,8 +105,8 @@ events directly, which is exactly where the corpus says decision state belongs. 
 walked path has since emptied — the `250` renders from existence (FnEmail-Model cd06274, the
 walk's first `TransactionState` traversal) — and which FnEmail-Model then split and half-named
 (`ReversePathAllowed` at the `MailFrom` step, 2026-08-09: a view names the response to its
-occasioning event); the second half's name, and what a rejection walk seats at the slice layer,
-stay open. *(Dated note, 2026-08-08: this clause
+occasioning event; the second half became `RecipientConfirmed` the same day); what a rejection
+walk seats at the slice layer stays open. *(Dated note, 2026-08-08: this clause
 originally read "whose dataset is empty, a question parked with the walk's step 6"; the walk's
 first `TransactionState` traversal note quotes that phrase and marks it discharged.)*
 

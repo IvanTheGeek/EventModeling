@@ -1,5 +1,19 @@
 # One fold, three consumers — state view, todo list, decision model
 
+> **Status: the quotations are verified; the three-fates frame is invented here.** Corpus stance:
+> **silent** — the authors never state this split in any form, and the closing section records that
+> request/response protocol conversation state is *"addressed nowhere in the corpus"* after a sweep
+> of 47 podcast episodes, every recorded talk and both sites. Our stance: **invent**, adopted
+> because it decided FnEmail's question cleanly. Treat the quotes as evidence and the frame as a
+> hypothesis (AGENTS.md rule 9).
+>
+> ⚠️ **This frame has been cited as canon at least once, by an agent that had read all three of its
+> own warnings.** On 2026-08-09 it was used as the *test* settling whether SMTP's `DATA` verb
+> decomposes — a question about a protocol server, which is the exact gap the frame was drawn to
+> cover and cannot therefore adjudicate. The label was not missing; it failed to survive citation.
+> What would settle it: not a further label. Perhaps a convention that a document may not be used
+> to close a question inside the gap it was drawn for.
+
 Events accumulate; something reads the accumulated state. Which pattern is that? On this
 project's reading the corpus sorts into a three-way split, and the split is decided by exactly
 one thing: **who consumes the fold**. Not the shape of the data, not whether the actor is human,
@@ -8,11 +22,6 @@ not how many event types feed it. The consumer.
 Researched 2026-08-08 against the method corpus (both authors, spoken and written — see *Sources*
 at the end), prompted by the walk-through question of whether FnEmail's `TransactionState` is a
 todo list. FnEmail appears here as the worked example; the reading is of the method's corpus.
-
-One caution on weight. The quotations below are verified verbatim against primary sources; the
-**three-fates synthesis that organizes them is the author's reading** of the corpus — a working
-frame the method's authors never state in this form, adopted because it decided FnEmail's
-question cleanly. Treat the quotes as evidence and the frame as a hypothesis.
 
 ---
 

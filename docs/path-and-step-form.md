@@ -39,11 +39,18 @@ podcast, machine transcript.)
 | Given | the label alone, standing as an in-table sub-header — see below |
 | *(blank label)* | the minimal dependency — see degrees below |
 
-Two absences are meaningful. A **consulted** view — read internally, rendered to nobody — has no
-top row; its readers declare it in their own `Given` rows. A step whose actor is **outside the
-model** (infrastructure, a transport) has no top row either: the fields it lifts across the
-boundary are admitted because something inside consumes them, and nothing else about the outside
-is modeled.
+One absence is meaningful: a step whose actor is **outside the model** (infrastructure, a
+transport) has no top row — the fields it lifts across the boundary are admitted because
+something inside consumes them, and nothing else about the outside is modeled.
+
+An earlier revision sanctioned a second absence, the **consulted** view — read internally,
+rendered to nobody, "its readers declare it in their own `Given` rows." Ruled out 2026-08-09:
+a `Given` cites events, never views, so the declaration could never actually name the view, and
+the three-fates discipline already answers the case — a command handler's fold gets no box, and
+when outside data is genuinely needed a processor fetches it and puts it on the command as a
+parameter ([`state-view-todo-list-decision-model.md`](state-view-todo-list-decision-model.md)).
+The worked walk's one consulted box dissolved under this ruling; consultation that is real
+returns as a processing slice, not as an unread view.
 
 **The command row carries the fields the command takes from its actor.** A bare command name
 breaks the completeness check: every field needs an origin, and for everything the actor supplies

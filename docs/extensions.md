@@ -183,11 +183,13 @@ has found coupling the method says should not exist. No current artifact surface
 7. **Naming — avoid "workflow" for the business-level grouping.** Dymitruk already uses *workflow
    step* for one slice, i.e. the technical unit. Three distinct things are in play and two are
    already named:
+
    | Thing | Name | Altitude |
    |---|---|---|
    | One slice | **workflow step** (Dymitruk) | technical unit |
    | A named business grouping | **chapter** (Dilger) | business narrative |
    | A concrete traversal with data | **path** (this extension) | execution instance |
+
    Caveat: a chapter groups *adjacent* slices. If business groupings must span non-contiguous
    slices, chapters need extending from "contiguous group" to "named semantic group" — at which
    point it may be a fourth construct rather than a reuse.

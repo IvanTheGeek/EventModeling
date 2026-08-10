@@ -11,12 +11,22 @@ Moved here 2026-08-08 from FnEmail-Model's
 (the drafting history is in that repo's git), on Ivan's ruling that generic altitude material
 belongs in the method repo now that it exists. FnEmail stays throughout as the worked example.
 
-**What deliberately did not move:** the charter rule and the payload rule remain in that same file
-as FnEmail's operative working rules. **The gate sequence and the four tiers no longer do** —
+**What deliberately did not move:** the payload rule, which stays in FnEmail-Model as one of its
+own operative rules — in that repo's `event-model.md` since 2026-08-10, with `model-altitude.md`
+§2.4 the signpost stub that says so. **The gate sequence and the four tiers no longer stay** —
 unadopted 2026-08-10 and parked in [extensions.md](extensions.md) §9, with the events they had
 classified retired to git. They were described here as flow candidates awaiting a second modeled
-system; what actually moved them was the owner finding the vocabulary unfamiliar in his own model. References below of the form §2.x point into that file; references to §0–§1 point into the
-private research repo's `model-altitude-theory.md`, which holds the corpus theory.
+system; what actually moved them was the owner finding the vocabulary unfamiliar in his own model.
+**And the charter rule did not survive at all**: FnEmail has no charter as of 2026-08-10. A
+one-sentence charter was the wrong shape for the job it was doing — *conformant* in prose is
+unfalsifiable — and it is replaced by two things that are not charters, a checkable set of
+normative specifications and a plain-prose product statement in that repo's README. Read this
+document's own opening line, *once a charter is named*, as a method-level frame with one fewer
+worked instance behind it.
+
+References below of the form §2.x point into that file, whose section numbers are preserved as
+signpost stubs; references to §0–§1 point into the private research repo's
+`model-altitude-theory.md`, which holds the corpus theory.
 
 ---
 
@@ -163,9 +173,12 @@ The foreign event lands as a **view**, a processor reads it, and **we** issue a 
 **our** event, under our name. The kit forbids the shortcut: no raw external IDs, no external
 schema, the board carries *"the translated name, not the external event name."*
 
-The application of this test to FnEmail's three boundaries stays in FnEmail-Model
-(`model-altitude.md` §4.3), where all three interfaces land on the same boundary RFC 5321 itself
-draws at its §2.1.
+The application of this test to FnEmail's three boundaries stays in FnEmail-Model, where the two
+**outbound** interfaces land on the boundary RFC 5321 itself draws at its §2.1. The third, the
+directory boundary, is inbound and sits at `RCPT TO` — the earlier claim that all three coincided
+was too broad and was narrowed when the section moved. It is in `event-model.md`
+as of 2026-08-10; `model-altitude.md` §4.3, where it used to be, is now the signpost stub that
+says so.
 
 ---
 

@@ -11,10 +11,11 @@ Moved here 2026-08-08 from FnEmail-Model's
 (the drafting history is in that repo's git), on Ivan's ruling that generic altitude material
 belongs in the method repo now that it exists. FnEmail stays throughout as the worked example.
 
-**What deliberately did not move:** the charter rule, the gate sequence (G1–G5), the four tiers,
-and the payload rule remain in that same file as FnEmail's operative working rules, alongside
-their application to its events — they are flow candidates once a second modeled system tests
-them. References below of the form §2.x point into that file; references to §0–§1 point into the
+**What deliberately did not move:** the charter rule and the payload rule remain in that same file
+as FnEmail's operative working rules. **The gate sequence and the four tiers no longer do** —
+unadopted 2026-08-10 and parked in [extensions.md](extensions.md) §9, with the events they had
+classified retired to git. They were described here as flow candidates awaiting a second modeled
+system; what actually moved them was the owner finding the vocabulary unfamiliar in his own model. References below of the form §2.x point into that file; references to §0–§1 point into the
 private research repo's `model-altitude-theory.md`, which holds the corpus theory.
 
 ---
